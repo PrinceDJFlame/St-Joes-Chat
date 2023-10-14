@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>St Joes Room</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<div class="container">
+<button id="logout" onclick="logout();"" class="glyphicon glyphicon-log-out btn btn-aqua">Logout</button>
+	<center>
+		<h1 class="header">	
+			St Joes Chat	
+			<sup>
+				<img src="Mail.png">
+			</sup>
+		</h1>
+		<h3 class="color_red" id="user_name"></h3>
+		<div class="form-group input_div_room_page">
+			<label>Choose a house and type into the text box: </label>
+
+            <ul class="Forms">
+                <li><a href="#"></a>Edmund Rice <img src="Edmund Rice.png" ></li>
+                <li><a href="#"></a>O'donaghue <img src="O'donaghue.png" ></li>
+                <li><a href="#"></a>Kerrigan <img src="Kerrigan.png" ></li>
+                <li><a href="#"></a>Blessed Tansi <img src="Blessed Tansi.png" ></li>
+                <li><a href="#"></a>Nano Nagle <img src="Nano Nagle.png" ></li>
+            </ul>
+			<input type="text" id="room_name" class="form-control" placeholder="# Room Name">
+		</div>
+		<button onclick="addRoom()" class="btn btn-success">#Add Room</button>
+
+		<div id="output"></div>
+	
+	</center>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
